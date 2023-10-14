@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>equality operators and objects</title>
+</head>
+<body>
+    
+    <script>
+        // transfer by copying 
+        let primitive1 = 10;
+        let primitive2 = primitive1;
+        primitive2++;
+        console.log("primitive1 =", primitive1);
+        console.log("primitive2 =", primitive2);
+
+        // transfer by reference
+        let complex1 = { data: 10 };
+        let complex2 = complex1;
+        complex2.data++;
+        console.log(complex1);
+        console.log(complex2);
+    </script>
+</body>
+</html>
